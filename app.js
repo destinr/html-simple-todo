@@ -19,14 +19,7 @@ const addTask = () => {
 
 const crossOff = (element) => {
     eleText = element.innerHTML
-    if (element.class === 'todo'){
-        console.log(element.class)
-        element.class = "completed"
-    }
-    else {
-        console.log(element.class)
-        element.class = "todo"
-    }
+    element.innerHTML = `<s> ${eleText} </s>`
 }
 
 const inputBox = document.getElementById("newTask")
